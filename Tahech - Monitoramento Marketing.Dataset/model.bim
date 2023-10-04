@@ -1,0 +1,576 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Clientes geral\",\"Prospecções Arli\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.121.903.0 (23.09)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "pt-BR",
+    "cultures": [
+      {
+        "name": "pt-BR",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "pt-BR",
+    "tables": [
+      {
+        "name": "DateTableTemplate_edd27602-8d9c-4790-bd86-57050a662512",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "b9704a14-5d11-43c7-a517-e385629321fa",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "b798612a-72d1-4924-8fc1-da6377f1a5ae",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "b13c54c3-2a14-4345-a755-96d339283fcf",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mês",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "df5a149e-0d36-47ad-95e7-034938a08010",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "33966e33-20c7-480b-a277-6068d702bde9",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim \" & [QuarterNo]",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "633a57fb-6bb9-4920-a82f-fd9f745e4e11",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Dia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "88597b8a-ad84-4eb7-8c5f-056554cc09d7",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Hierarquia de datas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Ano",
+                "column": "Ano",
+                "lineageTag": "0fb6ef2a-371b-4407-b665-eb234aa2f0a0",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "3440d432-4adb-431a-b3a8-e9772eaeb614",
+                "ordinal": 1
+              },
+              {
+                "name": "Mês",
+                "column": "Mês",
+                "lineageTag": "e0536b7b-3cd8-4803-9727-c33020020844",
+                "ordinal": 2
+              },
+              {
+                "name": "Dia",
+                "column": "Dia",
+                "lineageTag": "ae5a3be6-a827-4a44-984c-f920859962ba",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "78080be3-2bf3-469a-a547-b47bf51df6a2"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "9c99f126-e743-42cb-b653-6b43cfefb011",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_edd27602-8d9c-4790-bd86-57050a662512",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Clientes geral",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Column1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9f76f882-bf2a-46e8-b41d-bcaf4c0355dd",
+            "sourceColumn": "Column1",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "RAZAO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3116a3a1-bf94-455e-960b-5421efbf50c5",
+            "sourceColumn": "RAZAO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "_1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8aca1ddc-2cf5-415e-8be0-d65c6875c011",
+            "sourceColumn": "_1",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tipos de prospecção",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "7e4a6f93-08b3-4e6b-869b-76ce56ca9355",
+            "sourceColumn": "Tipos de prospecção",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Campo de atuação",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4025e227-4b26-4503-8899-b9f5907fc4e8",
+            "sourceColumn": "Campo de atuação",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "_2",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2c7e12ea-7164-44e1-9a2f-376f298eb56a",
+            "sourceColumn": "_2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Observações",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d6965bb0-3885-4915-aaf5-062003f850b1",
+            "sourceColumn": "Observações",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "658a6fa5-2237-4cb6-8a8c-3b71d6f6570e",
+        "partitions": [
+          {
+            "name": "Clientes geral",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = GoogleSheets.Contents(\"https://docs.google.com/spreadsheets/d/1S4HsDi3_WSyxQ08evlVymlz9BX7R0SaIkoWBoXrVPPw/edit#gid=0\"),",
+                "    #\"Clientes geral_Table\" = Fonte{[name=\"Clientes geral\",ItemKind=\"Table\"]}[Data],",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(#\"Clientes geral_Table\", [PromoteAllScalars=true])",
+                "in",
+                "    #\"Cabeçalhos Promovidos\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Prospecções Arli",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegação"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Nome",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c46a3227-83ad-4615-b29d-34e13b1d0da7",
+            "sourceColumn": "Nome",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Cargo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "384ae64c-fe29-4932-8cfb-4a0e878ccf83",
+            "sourceColumn": "Cargo",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Empresa",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9041b274-de51-4601-97cb-b8b3ff4731d1",
+            "sourceColumn": "Empresa",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Fase 1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c047713b-896d-4417-ae4b-384fbe3bc4aa",
+            "sourceColumn": "Fase 1",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Fase 2",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3af45eb4-2e8b-45fa-82b6-d4e0c5b81d20",
+            "sourceColumn": "Fase 2",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Fase 3",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "641c78e2-673e-43cd-81da-64cc93a8a0fb",
+            "sourceColumn": "Fase 3",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "332fc772-951d-4682-8da9-7a7f75dfdc48",
+        "partitions": [
+          {
+            "name": "Prospecções Arli",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Fonte = GoogleSheets.Contents(\"https://docs.google.com/spreadsheets/d/1S4HsDi3_WSyxQ08evlVymlz9BX7R0SaIkoWBoXrVPPw/edit#gid=0\"),",
+                "    #\"Prospecções Arli_Table\" = Fonte{[name=\"Prospecções Arli\",ItemKind=\"Table\"]}[Data],",
+                "    #\"Cabeçalhos Promovidos\" = Table.PromoteHeaders(#\"Prospecções Arli_Table\", [PromoteAllScalars=true])",
+                "in",
+                "    #\"Cabeçalhos Promovidos\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "_calcs",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "e83c034e3fa140e291557b9e9bf200d3"
+          },
+          {
+            "name": "436ba87b-9c83-4389-a31b-ebd06a36be98",
+            "value": "{\"Expression\":\"\"}"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Column",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "e947e468-744e-4e60-a532-81b5f932b060",
+            "sourceColumn": "[Column]",
+            "summarizeBy": "sum",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "lineageTag": "3a4076d3-5db6-4ca1-804d-15eaee778a6c",
+        "measures": [
+          {
+            "name": "Prospecções",
+            "displayFolder": "Arli",
+            "expression": "COUNTROWS('Prospecções Arli')",
+            "formatString": "0",
+            "lineageTag": "5d13a70c-2bc1-4d14-a770-9e71ea8a0cb8"
+          },
+          {
+            "name": "Conexões Aceitas",
+            "displayFolder": "Arli",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    COUNTROWS(",
+              "        'Prospecções Arli'",
+              "    )",
+              "    ,FILTER(",
+              "        'Prospecções Arli'",
+              "        ,'Prospecções Arli'[Fase 1] = \"Aceitou Conexão\"",
+              "    )",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "b2dc3135-20c6-4e1d-b0be-6b2695c6a28d"
+          },
+          {
+            "name": "Percentual de Sucesso",
+            "displayFolder": "Arli",
+            "expression": "DIVIDE([Conexões Aceitas], [Prospecções])",
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "95fc405d-dd61-4fe0-bf12-2ac9ad8c72e2"
+          },
+          {
+            "name": "Prospecção Geral",
+            "expression": "COUNTROWS('Clientes geral')",
+            "formatString": "0",
+            "lineageTag": "da45d91b-6521-4a86-8256-a9453f07e841"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "_calcs",
+            "mode": "import",
+            "source": {
+              "expression": "Row(\"Column\", BLANK())",
+              "type": "calculated"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
