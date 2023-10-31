@@ -10,26 +10,13 @@
       "nodes": [
         {
           "location": {
-            "x": 0,
-            "y": 0
+            "x": 294,
+            "y": -5
           },
-          "nodeIndex": "Clientes geral",
-          "nodeLineageTag": "658a6fa5-2237-4cb6-8a8c-3b71d6f6570e",
+          "nodeIndex": "deal",
+          "nodeLineageTag": "7b905cc5-446d-4540-abd6-f5b77c96fdfc",
           "size": {
-            "height": 248,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 284,
-            "y": 12
-          },
-          "nodeIndex": "Prospecções Arli",
-          "nodeLineageTag": "332fc772-951d-4682-8da9-7a7f75dfdc48",
-          "size": {
-            "height": 224,
+            "height": 300,
             "width": 234
           },
           "zIndex": 0
@@ -37,7 +24,33 @@
         {
           "location": {
             "x": 568,
-            "y": 24
+            "y": 5
+          },
+          "nodeIndex": "stage_history",
+          "nodeLineageTag": "efbe124d-c0a0-4bc6-8fab-07fcbe5b1afe",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10,
+            "y": -5
+          },
+          "nodeIndex": "uf",
+          "nodeLineageTag": "43b04685-b0c3-40b8-b394-264e4975f18c",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 842,
+            "y": 55
           },
           "nodeIndex": "_calcs",
           "size": {

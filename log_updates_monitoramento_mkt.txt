@@ -1,0 +1,2 @@
+31/10/2023
+- Importado deal, uf e stage_history
