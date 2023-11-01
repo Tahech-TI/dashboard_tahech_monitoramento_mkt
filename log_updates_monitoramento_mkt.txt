@@ -1,2 +1,5 @@
+01/11/2023
+- Criado Visão Geral e Análise de Fases (ainda vazia).
+
 31/10/2023
 - Importado deal, uf e stage_history

@@ -10,8 +10,8 @@
       "nodes": [
         {
           "location": {
-            "x": 294,
-            "y": -5
+            "x": 275.57326758472897,
+            "y": 466.81055452019956
           },
           "nodeIndex": "deal",
           "nodeLineageTag": "7b905cc5-446d-4540-abd6-f5b77c96fdfc",
@@ -19,7 +19,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 1
         },
         {
           "location": {
@@ -32,7 +32,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 5
         },
         {
           "location": {
@@ -45,7 +45,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 2
         },
         {
           "location": {
@@ -53,6 +53,32 @@
             "y": 55
           },
           "nodeIndex": "_calcs",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 747.46535169457923,
+            "y": 662.22870487340219
+          },
+          "nodeIndex": "Ordem",
+          "nodeLineageTag": "ad200fdb-dca1-401c-9de5-e79b0c9b5533",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 583.16032099174583,
+            "y": 347.32771864433653
+          },
+          "nodeIndex": "Performance",
+          "nodeLineageTag": "c8137cd9-09d7-4bab-8194-a71b2678489d",
           "size": {
             "height": 200,
             "width": 234
