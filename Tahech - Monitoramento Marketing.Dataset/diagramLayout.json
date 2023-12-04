@@ -74,11 +74,10 @@
         },
         {
           "location": {
-            "x": 583.16032099174583,
-            "y": 347.32771864433653
+            "x": 1116,
+            "y": 297.6143524367011
           },
           "nodeIndex": "Performance",
-          "nodeLineageTag": "c8137cd9-09d7-4bab-8194-a71b2678489d",
           "size": {
             "height": 200,
             "width": 234
