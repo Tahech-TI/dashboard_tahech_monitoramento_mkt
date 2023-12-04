@@ -1,6 +1,6 @@
 04/11/2023
 - Mudança na ordem das fases
-- 
+- Criado aba de Linha do Tempo
 
 01/11/2023
 - Criado Visão Geral e Análise de Fases (ainda vazia).
