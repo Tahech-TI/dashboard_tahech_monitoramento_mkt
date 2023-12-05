@@ -61610,6 +61610,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
@@ -75095,6 +75099,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
@@ -75139,7 +75147,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"HclBCsIwEADAryx7bqBa9V5ikUKL4DXmsLSLhuoG0hT6Hw8+pB8z5jpjDO6wQE0jzTF46JxMPDpBWxjc/8cLr9vHQz2wi5S9St5K5EDbN1W2Q7JGvcm9oKcwcXTyyHFMceZ5oBA5wynBheTpQan7UpYVg772zU23dYfW/gA=\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Ordem = _t, Fases = _t])",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"Hc1NCsIwEEDhq4RZN1CtP+tSixRaBLcxiyEdNFQnkETwPi48SC9mku33Fk8p2EAFHc4YonditLzQbBl0pWCbi2P6rF8nWkM2YvEm+cCRPK6/lIrtkvXyhfYpJvQLRcv3EvY5hIjGOs6XgoeEJwoGfaQCxwRn5IcTUt7edd2Q6C5Tf+2GdgSt/w==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Ordem = _t, Fases = _t])",
                 "in",
                 "    Source"
               ],
