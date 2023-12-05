@@ -8769,29 +8769,6 @@
                   }
                 ]
               },
-              "uf.credenciais_bi_cti": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "uf",
-                    "ConceptualProperty": "CREDENCIAIS_BI_CTI"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "credenciais bi cti": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "CREDENCIAIS_BI_CTI": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ]
-              },
               "uf.criado_em_manual": {
                 "Definition": {
                   "Binding": {
@@ -61633,10 +61610,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "columns": [
@@ -62496,10 +62469,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Exception"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "columns": [
@@ -73021,19 +72990,6 @@
             "summarizeBy": "none"
           },
           {
-            "name": "CREDENCIAIS_BI_CTI",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "bad75e5d-03e6-46a7-b35a-4a69711a4335",
-            "sourceColumn": "CREDENCIAIS_BI_CTI",
-            "summarizeBy": "none"
-          },
-          {
             "name": "DATA_ENTRADA_VALIDACAO_CTI",
             "annotations": [
               {
@@ -74384,6 +74340,19 @@
             "lineageTag": "0f32d568-071d-4d3b-abb2-ee586b8a8fbc",
             "sourceColumn": "AREA_DE_ATUACAO_SP_PCI",
             "summarizeBy": "none"
+          },
+          {
+            "name": "CREDENCIAIS_ACESSO_CLIENTE_CTI",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "f2142bc0-0a35-4eb1-b2ba-9b35c91ecdb8",
+            "sourceColumn": "CREDENCIAIS_ACESSO_CLIENTE_CTI",
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "43b04685-b0c3-40b8-b394-264e4975f18c",
@@ -75126,10 +75095,6 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
-          {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
           }
         ],
         "columns": [
