@@ -1,4 +1,8 @@
-05/11/2023
+06/12/2023
+- Filtro de data adicionado a aba Visão Geral
+- Filtro de data adicionado a aba Análise de Fases
+
+05/12/2023
 - Dados atualizados
 
 04/11/2023
