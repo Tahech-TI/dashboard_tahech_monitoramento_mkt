@@ -23341,22 +23341,6 @@
                   }
                 ]
               },
-              "uf.teste": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "uf",
-                    "ConceptualProperty": "TESTE"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "teste": {
-                      "State": "Generated"
-                    }
-                  }
-                ]
-              },
               "uf.teste_campo_com_vario": {
                 "Definition": {
                   "Binding": {
@@ -71664,19 +71648,6 @@
             "summarizeBy": "none"
           },
           {
-            "name": "TESTE",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "dataType": "string",
-            "lineageTag": "506f789d-3547-403d-9d8c-24da7b7a424a",
-            "sourceColumn": "TESTE",
-            "summarizeBy": "none"
-          },
-          {
             "name": "_ENVIAR_E_IMPRIMIR_PESQUISA_AO_CLOSER_PASTA_INCLUIR_NA_PASTA_INFORMACOES_DA_REUNIAO_DE_QUEM_IRA_PARTICIPAR_CARGO_E_ENDERECO_RESERVAR_CARRO_E_HOTEL_SEPARAR_AGENDA_CRIAR_INVITE_COM_E_MAIL_DOS_ADVOGADOS_E_CLIENTES",
             "annotations": [
               {
@@ -74352,6 +74323,19 @@
             "dataType": "string",
             "lineageTag": "f2142bc0-0a35-4eb1-b2ba-9b35c91ecdb8",
             "sourceColumn": "CREDENCIAIS_ACESSO_CLIENTE_CTI",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TESTE_TESTE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fa6edd9b-f92a-45ce-96f1-debb7abf6644",
+            "sourceColumn": "TESTE_TESTE",
             "summarizeBy": "none"
           }
         ],
